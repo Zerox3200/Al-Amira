@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Al-Amira/static/css/main.2e12e16a.css",
-    "main.js": "/Al-Amira/static/js/main.874ead71.js",
+    "main.js": "/Al-Amira/static/js/main.5f92321b.js",
     "static/css/199.56f5a69d.chunk.css": "/Al-Amira/static/css/199.56f5a69d.chunk.css",
     "static/js/199.f21487de.chunk.js": "/Al-Amira/static/js/199.f21487de.chunk.js",
     "static/js/453.9d458dec.chunk.js": "/Al-Amira/static/js/453.9d458dec.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/783c376d-4f4b-4cd9-bd9b-49614c6efa6d (2).png": "/Al-Amira/static/media/783c376d-4f4b-4cd9-bd9b-49614c6efa6d (2).2b3035ef008aeb25f676.png",
     "index.html": "/Al-Amira/index.html",
     "main.2e12e16a.css.map": "/Al-Amira/static/css/main.2e12e16a.css.map",
-    "main.874ead71.js.map": "/Al-Amira/static/js/main.874ead71.js.map",
+    "main.5f92321b.js.map": "/Al-Amira/static/js/main.5f92321b.js.map",
     "199.56f5a69d.chunk.css.map": "/Al-Amira/static/css/199.56f5a69d.chunk.css.map",
     "199.f21487de.chunk.js.map": "/Al-Amira/static/js/199.f21487de.chunk.js.map",
     "453.9d458dec.chunk.js.map": "/Al-Amira/static/js/453.9d458dec.chunk.js.map",
@@ -28,6 +28,6 @@
   },
   "entrypoints": [
     "static/css/main.2e12e16a.css",
-    "static/js/main.874ead71.js"
+    "static/js/main.5f92321b.js"
   ]
 }
