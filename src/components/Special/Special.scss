@@ -1,0 +1,35 @@
+@use '../../helpers/functions' as *;
+
+.Special {
+    min-height: 794px;
+    width: 100%;
+    border: solid black 1px;
+    background-image: linear-gradient(to right, rgba($BaseColor, 0.8), rgba($BaseColor, 0.8)),
+        url('../../Assets/istockphoto-1333813284-612x612.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+
+    .Special_title {
+
+        h1 {
+            font-size: 45px;
+            color: white;
+
+            &::after {
+                content: "";
+                width: 100%;
+                display: block;
+                position: relative;
+                margin-top: 10px;
+                border: $secondColor 1px solid;
+            }
+        }
+    }
+
+
+}

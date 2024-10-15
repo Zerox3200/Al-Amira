@@ -1,0 +1,70 @@
+@use '../../../helpers/functions' as *;
+
+.Companies {
+
+    div:first-of-type {
+        h1 {
+            font-size: 45px;
+
+            &::after {
+                content: "";
+                width: 100%;
+                display: block;
+                position: relative;
+                margin-top: 10px;
+                border: $secondColor 1px solid;
+            }
+        }
+    }
+
+    .Companies_Slider {
+        min-height: 400px;
+        // border: solid black 1px;
+        padding: 20px;
+        margin: auto;
+        width: 90%;
+
+        .Company_Card {
+            height: 296px;
+            border-top-left-radius: 83px;
+            border-top-right-radius: 71px;
+            box-shadow: 0px 4px 4px 0px #00000040;
+            overflow: hidden;
+
+            div:nth-of-type(2) {
+                height: 79px;
+                color: $BaseColor;
+                text-align: center;
+
+                p {
+                    font-size: 22px;
+                }
+            }
+
+            .CoverImageOfCompany {
+                width: 100%;
+                height: 216px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-shadow: 0px 4px 4px 0px #00000040 inset;
+            }
+        }
+
+        .swiper {
+            z-index: 8;
+            padding-bottom: 70px;
+
+            .swiper-pagination-clickable .swiper-pagination-bullet {
+                width: 60px;
+                border-radius: 13px;
+                height: 15px;
+                background-color: $BaseColor;
+
+                @include Breakpoints(mobile) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

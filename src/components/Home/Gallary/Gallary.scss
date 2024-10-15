@@ -1,0 +1,38 @@
+@use '../../../helpers/functions' as *;
+
+.Gallary {
+    h1 {
+        font-size: 45px;
+    }
+
+    .Gallary_Images {
+        @include Breakpoints(medium) {
+            flex-wrap: wrap;
+        }
+
+        @include Breakpoints(small) {
+            flex-wrap: wrap;
+        }
+
+        @include Breakpoints(mobile) {
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 20%;
+            object-fit: cover;
+
+            @include Breakpoints(medium) {
+                width: 40%;
+            }
+
+            @include Breakpoints(small) {
+                width: 40%;
+            }
+
+            @include Breakpoints(mobile) {
+                width: 80%;
+            }
+        }
+    }
+}

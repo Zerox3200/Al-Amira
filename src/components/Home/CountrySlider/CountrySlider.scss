@@ -1,0 +1,152 @@
+@use '../../../helpers/functions' as *;
+
+.CountrySlider {
+    border: solid white 10px;
+    border-radius: 10px;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3%;
+    width: 90%;
+    margin: auto;
+    background-color: $BaseColor;
+    position: absolute;
+    bottom: -100px;
+
+    @include Breakpoints(mobile) {
+        width: 100%;
+    }
+
+
+    p {
+        color: white;
+        font-size: 20px;
+        width: 20%;
+
+        @include Breakpoints(medium) {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+            order: -1;
+        }
+
+        @include Breakpoints(small) {
+            width: 100%;
+            order: -1;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        @include Breakpoints(mobile) {
+            width: 100%;
+            order: -1;
+            text-align: center;
+            margin-top: 15px;
+        }
+    }
+
+    .Slider_Container {
+        width: 75%;
+        position: relative;
+
+        @include Breakpoints(medium) {
+            width: 100%;
+        }
+
+        @include Breakpoints(small) {
+            width: 100%;
+        }
+
+        @include Breakpoints(mobile) {
+            width: 100%;
+        }
+
+        .mySwiper {
+            height: 156px;
+            // padding: 0 10px;
+            width: 100%;
+
+            @include Breakpoints(medium) {
+                height: max-content;
+                margin: 20px 0;
+                width: 100%;
+            }
+
+            @include Breakpoints(small) {
+                height: max-content;
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            @include Breakpoints(mobile) {
+                height: max-content;
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            .swiper-wrapper {
+                align-items: center;
+            }
+
+            .swiper-slide {
+                height: max-content !important;
+                display: flex !important;
+                justify-content: center;
+            }
+
+        }
+    }
+
+    .SliderCard {
+        width: 180px;
+        height: 61px;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+
+        @include Breakpoints(medium) {
+            width: 100%;
+        }
+
+        @include Breakpoints(small) {
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        @include Breakpoints(mobile) {
+            width: 100%;
+        }
+    }
+
+    .custom-prev-arrow,
+    .custom-next-arrow {
+        background-color: transparent;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        color: white;
+
+        @include Breakpoints(small) {
+            display: none;
+        }
+
+        @include Breakpoints(mobile) {
+            display: none;
+        }
+    }
+
+    .custom-prev-arrow {
+        left: -24px;
+
+
+    }
+
+    .custom-next-arrow {
+        right: -24px;
+    }
+}

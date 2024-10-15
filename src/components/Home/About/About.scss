@@ -1,0 +1,192 @@
+@use '../../../helpers/functions' as *;
+
+.About {
+    // height: 1000px;
+    margin-top: 100px;
+    background-image: url('../../../Assets/Ellipse\ 53.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .About_Desc {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+
+            object-fit: cover;
+
+            @include Breakpoints(medium) {
+                width: 100%;
+                order: -1;
+            }
+
+            @include Breakpoints(small) {
+                width: 100%;
+                order: -1;
+            }
+
+            @include Breakpoints(mobile) {
+                order: -1;
+                width: 100%;
+            }
+
+            width: 50%;
+        }
+
+        article {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 10px;
+
+            @include Breakpoints(medium) {
+                width: 100%;
+            }
+
+            @include Breakpoints(small) {
+                width: 100%;
+            }
+
+            @include Breakpoints(mobile) {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 34px;
+                color: $secondColor;
+
+                &::after {
+                    content: "";
+                    width: 193px;
+                    display: block;
+                    position: relative;
+                    margin-top: 10px;
+                    border: black 1px solid;
+                }
+            }
+
+            h2 {
+                font-size: 41px;
+                font-weight: 500;
+                color: $BaseColor;
+
+                @include Breakpoints(mobile) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                margin-top: 10px;
+                font-size: 25px;
+            }
+
+            button {
+                width: 194px;
+                height: 55px;
+                border-radius: 7px;
+                background-color: $secondColor;
+                color: white;
+                transition: 0.3s linear all;
+
+                &:hover {
+                    background-color: rgba($secondColor, 0.8);
+                }
+            }
+        }
+    }
+
+    .About_Jobs {
+        h1 {
+            font-size: 45px;
+            color: $BaseColor;
+
+            @include Breakpoints(mobile) {
+                margin: 30px 0;
+            }
+
+            &::after {
+                content: "";
+                width: 292px;
+                display: block;
+                position: relative;
+                margin-top: 10px;
+                border: $secondColor 1px solid;
+            }
+        }
+
+        a {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .About_Jobs_Cards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            row-gap: 20px;
+            column-gap: 20px;
+
+            .About_Jobs_Card {
+                width: 29%;
+                height: max-content;
+                border-radius: 24px;
+                box-shadow: 0px 0px 5px black;
+                padding-bottom: 20px;
+                background-color: white;
+
+                h2 {
+                    font-size: 26px;
+                    color: $BaseColor;
+                }
+
+                h3 {
+                    font-size: 14px;
+                    color: #7B7575;
+                }
+
+                a {
+                    height: 47px;
+                    width: 155px;
+                    color: white;
+                    background-color: $BaseColor;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 7px;
+                }
+
+                div:nth-of-type(2) {
+                    height: 80%;
+                }
+
+                .FullJob {
+                    border: solid $secondColor 1px;
+                    padding: 14px 30px;
+                    border-radius: 40px;
+                    height: 20%;
+                    color: #202020D1;
+                    width: max-content;
+
+                }
+
+                @include Breakpoints(medium) {
+                    height: 450px;
+                    width: 44%;
+                }
+
+                @include Breakpoints(small) {
+                    width: 44%;
+                }
+
+                @include Breakpoints(mobile) {
+                    width: 89%;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,48 @@
+@use '../../helpers/functions' as *;
+
+nav {
+
+    height: 88px;
+    background-color: white;
+    z-index: 20;
+    border-bottom: solid $BaseColor 1px;
+
+    a {
+        color: $BaseColor;
+        transition: 0.5s linear all;
+        position: relative;
+
+        &:hover {
+            &::before {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            border: $BaseColor solid 0.1px;
+            width: 0%;
+            transition: 0.4s linear all;
+            opacity: 0;
+        }
+
+
+        @include Breakpoints(mobile) {
+            color: white;
+        }
+    }
+
+    .MobileBackground {
+        background-color: $BaseColor;
+        visibility: hidden;
+
+        @include Breakpoints(mobile) {
+            visibility: visible;
+            width: 100%;
+        }
+    }
+}
