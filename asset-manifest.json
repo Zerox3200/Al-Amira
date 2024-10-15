@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Al-Amira/static/css/main.2e12e16a.css",
+    "main.js": "/Al-Amira/static/js/main.874ead71.js",
+    "static/css/199.56f5a69d.chunk.css": "/Al-Amira/static/css/199.56f5a69d.chunk.css",
+    "static/js/199.f21487de.chunk.js": "/Al-Amira/static/js/199.f21487de.chunk.js",
+    "static/js/453.9d458dec.chunk.js": "/Al-Amira/static/js/453.9d458dec.chunk.js",
+    "static/js/71.f38cda58.chunk.js": "/Al-Amira/static/js/71.f38cda58.chunk.js",
+    "static/media/Ellipse 53.png": "/Al-Amira/static/media/Ellipse 53.9f3a28ae3b976b45b212.png",
+    "static/media/2a84b393-84a2-4327-b578-ac97a32de92f.png": "/Al-Amira/static/media/2a84b393-84a2-4327-b578-ac97a32de92f.9e05c6a0684c302d8def.png",
+    "static/media/pic2home.png": "/Al-Amira/static/media/pic2home.2a48b2b149a94320c47c.png",
+    "static/media/a64f8495-07bd-4225-9c6e-94370ef9f5fe.png": "/Al-Amira/static/media/a64f8495-07bd-4225-9c6e-94370ef9f5fe.3b3872b42470907e4e3d.png",
+    "static/media/783c376d-4f4b-4cd9-bd9b-49614c6efa6d.png": "/Al-Amira/static/media/783c376d-4f4b-4cd9-bd9b-49614c6efa6d.45470206527f49dcf505.png",
+    "static/media/d0bb2f65-dba0-49dd-b243-7ce9fcb84b66 (2).png": "/Al-Amira/static/media/d0bb2f65-dba0-49dd-b243-7ce9fcb84b66 (2).3c62dd45898f60340669.png",
+    "static/media/5883dd29-3d0e-49db-bde6-56b449cc3153 (2).png": "/Al-Amira/static/media/5883dd29-3d0e-49db-bde6-56b449cc3153 (2).6818aa5fa2ef0244ced1.png",
+    "static/media/73bce5c7-50ab-4252-a67f-ff2950f8aa0c (2).png": "/Al-Amira/static/media/73bce5c7-50ab-4252-a67f-ff2950f8aa0c (2).ad2bf402613c085ac35b.png",
+    "static/media/الرئيسية 1.jpg": "/Al-Amira/static/media/الرئيسية 1.da4378a472e6675c167e.jpg",
+    "static/media/441354ad-9e37-4237-a790-067623b2022c (2).png": "/Al-Amira/static/media/441354ad-9e37-4237-a790-067623b2022c (2).d54d9c37ace73855b57a.png",
+    "static/media/791fe52d-12f7-4e99-9052-53d5447edcac (2).png": "/Al-Amira/static/media/791fe52d-12f7-4e99-9052-53d5447edcac (2).d3f54f0cd5c04fca0a4a.png",
+    "static/media/783c376d-4f4b-4cd9-bd9b-49614c6efa6d (2).png": "/Al-Amira/static/media/783c376d-4f4b-4cd9-bd9b-49614c6efa6d (2).2b3035ef008aeb25f676.png",
+    "index.html": "/Al-Amira/index.html",
+    "main.2e12e16a.css.map": "/Al-Amira/static/css/main.2e12e16a.css.map",
+    "main.874ead71.js.map": "/Al-Amira/static/js/main.874ead71.js.map",
+    "199.56f5a69d.chunk.css.map": "/Al-Amira/static/css/199.56f5a69d.chunk.css.map",
+    "199.f21487de.chunk.js.map": "/Al-Amira/static/js/199.f21487de.chunk.js.map",
+    "453.9d458dec.chunk.js.map": "/Al-Amira/static/js/453.9d458dec.chunk.js.map",
+    "71.f38cda58.chunk.js.map": "/Al-Amira/static/js/71.f38cda58.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e12e16a.css",
+    "static/js/main.874ead71.js"
+  ]
+}
