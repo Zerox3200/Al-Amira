@@ -1,0 +1,54 @@
+@use "../../helpers/_functions.scss" as *;
+.main-About-us {
+    margin: 88px auto;
+    .main-header-image {
+        background-image: linear-gradient(to right, rgba($BaseColor, 0.8), rgba($BaseColor, 0.8)),
+            url("../../Assets/صور المشروع/من نحن/business-people-partnership-support-team-urban-scene-concept.jpg");
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .about-text {
+            text-align: center;
+            h1 {
+                color: white;
+                font-size: 30px;
+            }
+        }
+    }
+    .about-alamir {
+        padding: $Mainpadding;
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p {
+            padding-top: 10px;
+            font-size: 20px;
+            color: black;
+        }
+    }
+    .about-service {
+        margin: $Mainpadding;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $BaseColor;
+        border-radius: 30px 30px 0px 0px;
+        .image {
+            width: 40%;
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: contain;
+            }
+        }
+
+        .text {
+            width: 50%;
+        }
+    }
+}
