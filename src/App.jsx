@@ -5,6 +5,7 @@ import { lazy, Suspense } from 'react';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const Aboutus = lazy(() => import('./pages/Aboutus/Aboutus'));
+const Contact = lazy(() => import("./pages/Contact/Contact"))
 
 function App() {
 
@@ -22,6 +23,11 @@ function App() {
             <Aboutus />
           </Suspense>
         },
+        {
+          path: 'Contact', element: <Suspense fallback={null}>
+            <Contact />
+          </Suspense>
+        }
       ]
     }
   ])

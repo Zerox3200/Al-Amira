@@ -17,6 +17,7 @@
 
     @include Breakpoints(mobile) {
         width: 100%;
+        bottom: -140px;
     }
 
 

@@ -1,0 +1,59 @@
+@use '../../../helpers/functions' as *;
+
+.ContactInto {
+    height: 319px;
+    background-image: linear-gradient(to right, rgba($BaseColor, 0.7), rgba($BaseColor, 0.7)),
+        url('../../../Assets/istockphoto-1479275026-612x612.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+.ContactInto2 {
+    width: 100%;
+    min-height: 371px;
+    // border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+    .ContactCard {
+        width: 387px;
+        height: 371px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2509803922);
+
+        @include Breakpoints(small) {
+            width: 45%;
+        }
+
+        h2 {
+            font-size: 19px;
+            font-weight: bold;
+            color: $BaseColor;
+        }
+
+        svg {
+            width: 58px;
+            height: 58px;
+            color: $secondColor;
+        }
+
+        p {
+            // border: solid black 1px;
+            height: 96px;
+        }
+    }
+}
+
+// box-shadow: 0px 4px 4px 0px #00000040;

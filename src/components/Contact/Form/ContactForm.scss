@@ -1,0 +1,130 @@
+@use '../../../helpers/functions' as *;
+
+.ContactForm {
+    // border: solid black 1px;
+    min-height: 675px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    // border: solid black 1px;
+
+    .ContactForm_Desc {
+        width: 543px;
+
+        @include Breakpoints(small) {
+            width: 100%;
+            order: -1;
+        }
+
+        @include Breakpoints(mobile) {
+            width: 100%;
+            order: -1;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: $BaseColor;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 22px;
+            margin-top: 10px;
+            width: 459px;
+
+            @include Breakpoints(small) {
+                width: 100%;
+            }
+
+            @include Breakpoints(mobile) {
+                width: 100%;
+            }
+        }
+
+        img {
+            width: 543px;
+            height: 466px;
+            object-fit: cover;
+
+            @include Breakpoints(small) {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            @include Breakpoints(mobile) {
+                width: 100%;
+                height: max-content;
+                object-fit: contain;
+            }
+        }
+    }
+
+    form {
+        width: 629px;
+        height: 675px;
+        box-shadow: 0px 4px 4px 5px #00000040;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 24px;
+
+        div {
+            @include Breakpoints(mobile) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+        }
+
+        @include Breakpoints(mobile) {
+            width: 100%;
+        }
+
+        input,
+        textarea {
+            width: 560px;
+            height: 70px;
+            border-radius: 5px;
+
+            @include Breakpoints(mobile) {
+                width: 90%;
+            }
+
+            &:focus {
+                border-color: $BaseColor;
+                outline: none;
+                --tw-ring-color: none;
+            }
+        }
+
+        textarea {
+            height: 264px;
+        }
+
+        button {
+            width: 560px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $secondColor;
+            color: white;
+            font-size: 25px;
+            transition: all 0.5s linear;
+
+            @include Breakpoints(mobile) {
+                width: 90%;
+            }
+
+            &:hover {
+                background-color: rgba($secondColor, 0.9);
+            }
+        }
+    }
+}

@@ -8,6 +8,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @include Breakpoints(mobile) {
+        margin-top: 120px;
+    }
+
     .About_Desc {
         display: flex;
         justify-content: center;
