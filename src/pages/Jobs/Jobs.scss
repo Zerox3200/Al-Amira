@@ -1,0 +1,90 @@
+@use '../../helpers/functions' as *;
+
+.Jobs {
+    margin-top: 88px;
+
+    .Jobs_Intro {
+        min-height: 419px;
+        padding: 5px 0;
+        border: solid black 1px;
+        background-image: linear-gradient(to right, rgba($BaseColor, 0.8), rgba($BaseColor, 0.8)),
+            url('../../Assets/istockphoto-1476707542-612x612.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 10px;
+
+        h1 {
+            font-size: 44px;
+            color: white;
+        }
+
+        p {
+            width: 60%;
+            color: #C4C4C4;
+            font-size: 22px;
+            text-align: center;
+
+            @include Breakpoints(mobile) {
+                width: 100%;
+                padding: 10px;
+                font-size: 19px;
+            }
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            @include Breakpoints(mobile) {
+                flex-wrap: wrap;
+            }
+
+
+            input,
+            select {
+                width: 326px;
+                height: 64px;
+                border-radius: 6px;
+
+                @include Breakpoints(mobile) {
+                    width: 90%;
+                }
+
+                &:focus {
+                    border-color: $BaseColor;
+                    outline: none;
+                    --tw-ring-color: none;
+                }
+            }
+
+            button {
+                width: 225px;
+                height: 64px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $ThirdColor;
+                color: black;
+                font-size: 25px;
+                transition: all 0.5s linear;
+                border-radius: 6px;
+
+                @include Breakpoints(mobile) {
+                    width: 90%;
+                }
+
+                &:hover {
+                    background-color: rgba($ThirdColor, 0.7);
+                }
+            }
+        }
+    }
+
+}

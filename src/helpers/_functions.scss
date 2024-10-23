@@ -3,15 +3,21 @@
         @media (max-width: 767px) {
             @content;
         }
-    } @else if $point ==small {
+    }
+
+    @else if $point ==small {
         @media (min-width: 768px) and (max-width: 991px) {
             @content;
         }
-    } @else if $point ==medium {
+    }
+
+    @else if $point ==medium {
         @media (min-width: 992px) and (max-width: 1199px) {
             @content;
         }
-    } @else if $point ==large {
+    }
+
+    @else if $point ==large {
         @media (min-width: 1200px) {
             @content;
         }
@@ -20,6 +26,7 @@
 
 $BaseColor: #14213d;
 $secondColor: #fb8b24;
+$ThirdColor: #FB8B24;
 $HoverColor: #d48383;
 $Mainpadding: 25px;
 
