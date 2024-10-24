@@ -1,5 +1,7 @@
 import React from 'react'
 import './Jobs.scss'
+import JobImage from '../../Assets/73bce5c7-50ab-4252-a67f-ff2950f8aa0c (2).png'
+import JobCard from './JobCard'
 
 export default function Jobs() {
 
@@ -22,6 +24,14 @@ export default function Jobs() {
                 </select>
                 <button>Search</button>
             </form>
+        </div>
+        <div className="Job_cards container mx-auto">
+            <JobCard JobImage={JobImage} />
+            <JobCard JobImage={JobImage} />
+            <JobCard JobImage={JobImage} />
+            <JobCard JobImage={JobImage} />
+            <JobCard JobImage={JobImage} />
+            <JobCard JobImage={JobImage} />
         </div>
     </section>
 

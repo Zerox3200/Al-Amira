@@ -87,4 +87,122 @@
         }
     }
 
+    .Job_cards {
+        margin-top: 20px;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .Job_card {
+            width: 612px;
+            min-height: 434px;
+            gap: 0px;
+            border-radius: 7px;
+            box-shadow: 0px 0px 6px black;
+            padding: 20px;
+
+            @include Breakpoints(mobile) {
+                width: 90%;
+            }
+
+            .Job_card_image {
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    width: 100%;
+                    border: 1px solid #C4C4C4;
+
+                }
+
+                span {
+                    width: 111px;
+                    height: 34px;
+                    border-radius: 25px;
+                    background-color: $FourthColor;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #444444;
+                    gap: 5px;
+
+                    svg {
+                        position: relative;
+                        top: 1px;
+                    }
+                }
+
+                .JobLogo {
+                    display: flex;
+                    justify-content: end;
+                    gap: 15px;
+
+
+
+                    .JobLogo_text {
+                        h1 {
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+
+                        h2 {
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            .Job_card_decs {
+                h3 {
+                    font-size: 24px;
+                    color: $BaseColor;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                }
+
+                p {
+                    font-size: 18px;
+                    color: #7B7575;
+                    margin-top: 10px;
+                }
+            }
+
+            .Job_Footer {
+                width: 100%;
+                height: 100px;
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    font-size: 22px;
+                }
+
+                svg {
+                    width: 26px;
+                    height: 26px;
+                    color: $ThirdColor;
+                }
+
+                button {
+                    width: 161px;
+                    height: 46px;
+                    border-radius: 6px;
+                    background-color: $ThirdColor;
+                    color: white;
+                    transition: all linear 0.5s;
+                }
+            }
+        }
+    }
+
 }

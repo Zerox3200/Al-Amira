@@ -26,8 +26,10 @@
 
 $BaseColor: #14213d;
 $secondColor: #fb8b24;
+
 $ThirdColor: #FB8B24;
-$HoverColor: #d48383;
+$FourthColor: #F6D8BDFA;
+
 $Mainpadding: 25px;
 
 @mixin Animtation($Time, $Type, $Prop) {
