@@ -33,6 +33,13 @@ export default function Jobs() {
             <JobCard JobImage={JobImage} />
             <JobCard JobImage={JobImage} />
         </div>
+        <div className="w-full flex justify-center gap-2 items-center my-4 Pagination flex-wrap">
+            <div className='Active'>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
     </section>
 
 }

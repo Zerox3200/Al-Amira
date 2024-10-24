@@ -205,4 +205,29 @@
         }
     }
 
+    .Pagination {
+        div {
+            width: 58px;
+            height: 46px;
+            background-color: #C4C4C4;
+            color: black;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 23px;
+
+            @include Breakpoints(mobile) {
+                width: 48px;
+                height: 36px;
+                font-size: 18px;
+            }
+
+            &.Active {
+                background-color: $ThirdColor ;
+                color: white
+            }
+        }
+    }
+
 }
